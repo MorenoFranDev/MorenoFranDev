@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+/* Mobile: 375px
+Desktop: 1440px  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  font-family: "spartan";
+}
+:root {
+  --Dark-Gray: hsl(0, 0%, 63%);
+  --Black: hsl(0, 0%, 0%);
+  --White: hsl(0, 0%, 100%);
+  --Very-Dark: hsl(0, 0%, 27%);
+}
+
+body {
+  margin: auto;
+  width: 1440px;
+}
+header {
+  position: absolute;
+  text-transform: lowercase;
+  padding: 2rem 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  padding: 0 1rem;
+  margin-right: auto;
+  justify-content: flex-start;
+}
+
+ul a {
+  color: white;
+  padding: 1rem 0.8rem;
+}
+
+ul a:hover {
+  padding: 0.8rem 0.8rem;
+  border-bottom: 2px solid white;
+}
+
+/* ------------------Cards----------------------- */
+
+.Card {
+  overflow-x: hidden;
+  width: 1440px;
+  display: flex;
+}
+
+.CardBody h3 {
+  margin-bottom: 4rem;
+  font-size: 32px;
+  width: 41rem;
+}
+
+.CardBody p {
+  width: 41rem;
+  line-height: 20px;
+  height: 9rem;
+  color: var(--Dark-Gray);
+  margin-bottom: 4rem;
+}
+
+.CardBody a:hover {
+  color: var(--Dark-Gray);
+}
+.CardBody a {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--Very-Dark);
+}
+.content {
+  height: 31rem;
+  padding: 10rem 5rem 0 5rem;
+}
+.Arrows {
+  margin-top: 8rem;
+}
+.Arrows a img {
+  margin: 6px 0 0 0;
+  padding: 1.5rem 2.7rem;
+  background-color: var(--Black);
+}
+
+.Arrows a img:hover {
+  background-color: var(--Very-Dark);
+}
+
+footer {
+  width: 1440px;
+  margin: -5px 0;
+  display: flex;
+}
+
+.aboutBody {
+  padding: 5rem;
+}
+
+.aboutBody p {
+  line-height: 19px;
+  color: var(--Dark-Gray);
+}
+.aboutBody h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  body {
+    width: 100%;
+    margin: auto;
+  }
+
+  footer,
+  .Card {
+    display: flex;
+    width: auto;
+  }
+
+  .CardBody {
+    padding: 0;
+    width: 45vw;
+    height: 463px;
+  }
+  .CardImg img {
+    height: 463px;
+    width: 55vw;
+  }
+  .content {
+    display: block;
+    margin: auto;
+    padding: 4rem;
+  }
+
+  .Arrows {
+    margin: 24px 0 0 0;
+    padding: 0;
+  }
+  .Arrows a img {
+    margin: 6px 0 0 0;
+    padding: 1.5rem 2.6rem;
+    background-color: var(--Black);
+  }
+
+  .aboutBody {
+    width: 100%;
+    margin: auto;
+  }
+  .CardBody p,
+  .aboutBody p {
+    font-size: 12px;
+  }
+}
